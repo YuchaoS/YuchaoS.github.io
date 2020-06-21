@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1. TWO SUM | Blog</title>
+    <meta name="description" content="Just playing around">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.943dcab2.css" as="style"><link rel="preload" href="/assets/js/app.41db148f.js" as="script"><link rel="preload" href="/assets/js/2.ee40ad1c.js" as="script"><link rel="preload" href="/assets/js/11.2fa9c6ed.js" as="script"><link rel="prefetch" href="/assets/js/10.7c1a4bb0.js"><link rel="prefetch" href="/assets/js/12.c70274a2.js"><link rel="prefetch" href="/assets/js/13.d0e58825.js"><link rel="prefetch" href="/assets/js/14.3403b7cc.js"><link rel="prefetch" href="/assets/js/3.0e595f52.js"><link rel="prefetch" href="/assets/js/4.74f755ed.js"><link rel="prefetch" href="/assets/js/5.4e29749e.js"><link rel="prefetch" href="/assets/js/6.8413f87b.js"><link rel="prefetch" href="/assets/js/7.36badee1.js"><link rel="prefetch" href="/assets/js/8.7f67e00c.js"><link rel="prefetch" href="/assets/js/9.c3d77859.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.943dcab2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/list/" class="nav-link router-link-active">Blog</a></div><div class="nav-item"><a href="/about/" class="nav-link">About</a></div><div class="nav-item"><a href="https://github.com/YuchaoS/YuchaoS.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/list/" class="nav-link router-link-active">Blog</a></div><div class="nav-item"><a href="/about/" class="nav-link">About</a></div><div class="nav-item"><a href="https://github.com/YuchaoS/YuchaoS.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>WEB</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/list/How_to_bulid_your_own_blog.html" class="sidebar-link">如何通过vuepress+GitHub Pages搭建你的博客</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>烤面筋</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/list/mianjing.html" class="sidebar-link">C++</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>To Be Continued</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="_1-two-sum"><a href="#_1-two-sum" class="header-anchor">#</a> 1. TWO SUM</h3> <ul><li>16 ms</li> <li>14 MB</li></ul> <div class="language- extra-class"><pre class="language-text"><code>class Solution(object):
+    def twoSum(self, nums, target):
+        &quot;&quot;&quot;
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        &quot;&quot;&quot;
+        empty = {}
+        for i in range(len(nums)):
+            if not empty.has_key(nums[i]):
+            #if nums[i] not in empty.keys():
+            #use this will slow down 
+                empty[target-nums[i]] = i
+            else:
+                return[empty[nums[i]],i]
+</code></pre></div><ul><li>12 ms</li> <li>11.6 MB</li></ul> <div class="language- extra-class"><pre class="language-text"><code>
+class Solution {
+    public:
+    vector&lt;int&gt; twoSum(vector&lt;int&gt;&amp; nums,int target){
+        map&lt;int,int&gt; empty;
+        vector&lt;int&gt; result;
+        for (int i=0;i&lt;nums.size();i++){
+            if(!empty.count(nums[i])){
+                empty[target-nums[i]] = i;
+            }
+            else{
+                result.push_back(empty[nums[i]]);
+                result.push_back(i);
+                return result;
+            }
+        }
+        return result;
+    }
+};
+</code></pre></div><h3 id="_2-add-two-numbers"><a href="#_2-add-two-numbers" class="header-anchor">#</a> 2.add_Two_numbers</h3> <ul><li>68ms</li></ul> <div class="language- extra-class"><pre class="language-text"><code># Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution(object):
+    def addTwoNumbers(self, l1, l2):
+        &quot;&quot;&quot;
+        :type l1: ListNode
+        :type l2: ListNode
+        :rtype: ListNode
+        &quot;&quot;&quot;
+        resultList = ListNode()
+        re = resultList
+        up = 0
+        while(l1 and l2):
+            result = l1.val+l2.val+up
+            if(result&gt;=10):
+                re.val = result%10
+                up = 1
+            else:
+                re.val =result
+                up = 0
+            l1 = l1.next
+            l2 = l2.next
+            if(l1 and l2):
+                re.next = ListNode()
+                re = re.next
+        while(l1):
+            re.next = ListNode()
+            re = re.next
+            result = up+l1.val
+            if(result&gt;=10):
+                re.val = result%10
+                up = 1
+            else:
+                re.val =result
+                up = 0
+            l1 = l1.next
+        while(l2):
+            re.next = ListNode()
+            re = re.next
+            result = up+l2.val
+            if(result&gt;=10):
+                re.val = result%10
+                up = 1
+            else:
+                re.val =result
+                up = 0
+            l2 = l2.next
+        while(up):
+            re.next = ListNode()
+            re = re.next
+            re.val = 1
+            up = 0
+        return resultList
+</code></pre></div><h3 id="_3"><a href="#_3" class="header-anchor">#</a> 3</h3> <ul><li>252 ms</li></ul> <div class="language- extra-class"><pre class="language-text"><code>class Solution(object):
+    def lengthOfLongestSubstring(self, s):
+        &quot;&quot;&quot;
+        :type s: str
+        :rtype: int
+        &quot;&quot;&quot;
+        if(len(s)==1):
+            return 1;
+        pre = -1
+        maxl = 0
+        tail = 1
+        while(len(s)-pre&gt;=maxl and tail&lt;len(s)):
+            i = tail-1
+            while(i&gt;pre):
+                if(s[i]==s[tail]):
+                    break
+                else:
+                    i = i-1
+            if(tail-i&gt;=maxl):
+                maxl = tail-i
+            pre = i
+            tail = tail+1
+        return maxl
+</code></pre></div><h3 id="_4"><a href="#_4" class="header-anchor">#</a> 4</h3> <div class="language- extra-class"><pre class="language-text"><code>def fi(nums1,nums2):
+    l1 = len(nums1)
+    l2 = len(nums2)
+    s = nums1 if(l1&lt;=l2) else nums2
+    c = nums1 if(l1&gt;l2) else nums2
+    k  = (l1+l2+1)/2
+    left = 0
+    right = len(s)
+    while(left&lt;=right):
+        i = (left+right)/2
+        j = k-i
+        if(i&lt;len(s) and  c[j-1]&gt;s[i]):
+            left = i+1
+        elif(i&gt;0 and s[i-1]&gt;c[j]):
+            right =i-1
+        else:
+            if(i==0):
+                left_max = c[j-1]
+            elif(j==0):
+                left_max = s[i-1]
+            else:
+                left_max = max(s[i-1],c[j-1])
+            if((l1+l2)%2==1):
+                return left_max
+            if(i==len(s)):
+                right_min = c[j]
+            elif(j==len(c)):
+                right_min = s[i]
+            else:
+                right_min = min(c[j],s[i])
+            return (left_max+right_min)/2.0
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.41db148f.js" defer></script><script src="/assets/js/2.ee40ad1c.js" defer></script><script src="/assets/js/11.2fa9c6ed.js" defer></script>
+  </body>
+</html>
